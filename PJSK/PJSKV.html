@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+</title>
+</head>
+<style>
+#title
+{
+position:fixed;
+height:130px;
+width:100%;
+background-color:rgba(255,255,255,1);
+padding:0.1em; 
+
+}
+
+
+#empty
+{
+height:130px;
+width:100%;
+background-color:white;
+padding:0.1em;
+}
+#zero
+{
+height:100px;
+width:100%;
+background-color:rgba(255,255,255,1);
+padding:0.1em; 
+
+}
+#one
+{
+height:1650px;
+width:100%;
+background-image:url("V.jpg");
+background-repeat:no-repeat;
+background-size: cover;
+padding:0.1em;
+}
+#Luka
+{
+width:325px;
+height:615px;
+background-image:url("luka.png");
+background-size: 325px 615px;
+background-repeat: no-repeat;
+transition-duration:0.5s;
+}
+#Meiko
+{
+width:190px;
+height:625px;
+background-image:url("meiko.png");
+background-size: 190px 625px;
+background-repeat: no-repeat;
+transition-duration:0.5s;
+}
+
+#Miku
+{
+width:540px;
+height:625px;
+background-image:url("miku.png");
+background-size: 540px 625px;
+background-repeat: no-repeat;
+transition-duration:0.5s;
+}
+#Rin
+{
+width:355px;
+height:700px;
+background-image:url("rin.png");
+background-size: 355px 700px;
+background-repeat: no-repeat;
+transition-duration:0.5s;
+}
+#Len
+{
+width:265px;
+height:575px;
+background-image:url("len.png");
+background-size: 265px 575px;
+background-repeat: no-repeat;
+transition-duration:0.5s;
+}
+#Kaito
+{
+width:475px;
+height:660px;
+background-image:url("kaito.png");
+background-size: 475px 660px;
+background-repeat: no-repeat;
+transition-duration:0.5s;
+}
+#Luka:hover
+{
+ transform:scale(1.2);;
+}
+#Meiko:hover
+{
+ transform:scale(1.2);;
+}
+#Miku:hover
+{
+ transform:scale(1.2);;
+}
+#Rin:hover
+{
+ transform:scale(1.2);;
+}
+#Len:hover
+{
+ transform:scale(1.2);;
+}
+#Kaito:hover
+{
+ transform:scale(1.2);;
+}
+</style>
+<style >
+a:link {
+text-shadow: 0px 0px 7px rgba(0,0,0);
+color:rgb(0,0,0);
+font-family:Microsoft JhengHei;
+}
+a:visited {
+text-shadow: 0px 0px 7px rgba(0,0,0);
+color:rgb(0,0,0);
+font-family:Microsoft JhengHei;
+}
+a:hover
+{
+color:rgb(0,0,0);
+text-shadow: 5px 5px 7px black;
+font-family:Microsoft JhengHei;
+}
+
+#B1{position:fixed;left:10px;top:0px;}
+
+#p1
+{
+color:rgb(0,0,0);
+text-indent:100px;
+line-height:0.1;
+font-size: 1.5em;
+font-family:Microsoft JhengHei;
+letter-spacing : 10px 
+}
+#p2
+{
+margin-left: auto;
+margin-right: auto;
+color:rgb(0,0,0);
+line-height:1;
+font-size: 1em;
+text-align:center;
+background-color:rgba(51,204,187,0.3);
+border-radius:0px 70px 0px 70px;
+}
+
+#p3
+{
+margin-left: auto;
+margin-right: auto;
+color:rgba(51,204,187,1);
+font-size: 3em;
+background-color:rgba(255,255,255,1);
+border-radius:10px;
+text-align:center;
+font-family:Microsoft JhengHei;
+}
+#p4{
+writing-mode: vertical-lr;
+margin-left: auto;
+margin-right: auto;
+letter-spacing : 10px ;
+color:rgba(255,255,255,1);
+font-size: 2em;
+text-shadow: 0px 0px 10px rgba(255,186,204);
+text-align:center;
+font-family:Microsoft JhengHei;
+background-color:rgba(0,0,146,0.3);
+border-radius:10px;
+}
+#p5{
+writing-mode: vertical-lr;
+margin-left: auto;
+margin-right: auto;
+letter-spacing : 10px ;
+color:rgba(255,255,255,1);
+font-size: 2em;
+text-shadow: 0px 0px 10px rgba(222,68,68);
+text-align:center;
+font-family:Microsoft JhengHei;
+background-color:rgba(0,0,146,0.3);
+border-radius:10px;
+}
+#p6{
+writing-mode: vertical-lr;
+margin-left: auto;
+margin-right: auto;
+letter-spacing : 10px ;
+color:rgba(255,255,255,1);
+font-size: 2em;
+text-shadow: 0px 0px 10px rgba(51,204,187);
+text-align:center;
+font-family:Microsoft JhengHei;
+background-color:rgba(0,0,146,0.3);
+border-radius:10px;
+}
+#p7{
+writing-mode: vertical-lr;
+margin-left: auto;
+margin-right: auto;
+letter-spacing : 10px ;
+color:rgba(255,255,255,1);
+font-size: 2em;
+text-shadow: 0px 0px 10px rgba(255,204,17);
+text-align:center;
+font-family:Microsoft JhengHei;
+background-color:rgba(0,0,146,0.3);
+border-radius:10px;
+}
+#p8{
+writing-mode: vertical-lr;
+margin-left: auto;
+margin-right: auto;
+letter-spacing : 10px ;
+color:rgba(255,255,255,1);
+font-size: 2em;
+text-shadow: 0px 0px 10px rgba(255,238,18);
+text-align:center;
+font-family:Microsoft JhengHei;
+background-color:rgba(0,0,146,0.3);
+border-radius:10px;
+}
+#p9{
+writing-mode: vertical-lr;
+margin-left: auto;
+margin-right: auto;
+letter-spacing : 10px ;
+color:rgba(255,255,255,1);
+font-size: 2em;
+text-shadow: 0px 0px 10px rgba(51,103,205);
+text-align:center;
+font-family:Microsoft JhengHei;
+background-color:rgba(0,0,146,0.3);
+border-radius:10px;
+}
+</style>
+</span>
+<body style="margin: 0">
+<div id="title" >
+
+<table  border="0", align="right",>
+    <tr>
+        <br>
+        <br>
+        <br>
+    </tr>
+        <tr>
+        <td id="p1"><h2><a href="PJSK.html"style='text-decoration:none;'>遊戲簡介</a></h2></td>
+        <td id="p1"><h2><a href="PJSKpeople.html"style='text-decoration:none;'>角色介紹</a></h2></td>
+        <td id="p1"><h2><a href="PJSKgame.html"style='text-decoration:none;'>遊玩系統</a></h2></td>
+        <td >&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</td>
+        </tr>
+    </table>
+    <img id='B1' src= "logo.png"  />
+</div>
+
+<div id="empty">
+</div>
+<div id="zero">
+    <table  border="0", align="center",>
+    <td><a href="PJSKV.html"style='text-decoration:none;'><img style="float: center;" src= "V家.png" width= "200" height="100" /></td>
+        <td>&emsp;&emsp;&emsp;</td>
+    <td><a href="PJSKLN.html"style='text-decoration:none;'><img style="float: center;" src= "LN.png" width= "200" height="100" /></td>
+        <td>&emsp;&emsp;&emsp;</td>
+    <td><a href="PJSKMMJ.html"style='text-decoration:none;'><img style="float: center;" src= "MMJ.png" width= "200" height="100" /></td>
+        <td>&emsp;&emsp;&emsp;</td>
+    <td><a href="PJSKVBS.html"style='text-decoration:none;'><img style="float: center;" src= "VBS.png" width= "200" height="100" /></td>
+        <td>&emsp;&emsp;&emsp;</td>
+    <td><a href="PJSKWS.html"style='text-decoration:none;'><img style="float:center;" src= "WS.png" width= "200" height="100" /></td>
+        <td>&emsp;&emsp;&emsp;</td>
+    <td><a href="PJSK25.html"style='text-decoration:none;'><img style="float: center;" src= "25.png" width= "200" height="100" /></td>
+    </table>
+</div>
+<div id="one">
+    <table  border="0", align="center",>
+<td><h1 id="p3">被全世界創作者寄託著歌曲與心願的歌手們</h1></td>
+</table>
+
+<table  border="0", align="center">
+<tr>
+<td  id="p2">
+<h2 >初音未來和她的夥伴們是以虛擬歌手的身份存在在現實世界和生活在「世界」。<br>
+他們演唱來自世界各地創作者的歌曲。他們會用熟悉和陌生的形式以團體方式出現在「世界」，和協助年輕人們探索其真正的心願。
+</h2>
+</td>
+</tr>
+</table>
+
+<table  border="0", align="center">
+    <tr>
+    <td ><p id='p6'><b>初音未來</b></p></td>
+    <td><a href="PJSKMiku.html"style='text-decoration:none;'><div id="Miku" ></div></a></td>
+<td ><p id='p7'><b>鏡音鈴</b></p></td>
+    <td><a href="PJSKRin.html"style='text-decoration:none;'><div id="Rin" ></div></a></td>
+<th ><p id='p8'><b>鏡音連</b></p></td>
+    <td ><a href="PJSKLen.html"style='text-decoration:none;'><div id="Len" ></div></a></td>
+
+</tr>
+    <tr>
+<th ><p id='p4'><b>巡音流歌</b></p></td>
+    <td ><a href="PJSKLuka.html"style='text-decoration:none;'><div id="Luka" ></div></a></td>
+ <td ><p id='p5'><b>Meiko</b></p></td>
+    <td><a href="PJSKMeiko.html"style='text-decoration:none;'><div id="Meiko" ></div></a></td>
+
+<th ><p id='p9'><b>KAITO</b></p></td>
+    <td ><a href="PJSKKaito.html"style='text-decoration:none;'><div id="Kaito" ></div></a></td>
+</tr>
+    </table>
+   </div>
+
+</body>
+</html>

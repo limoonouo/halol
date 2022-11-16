@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+</title>
+</head>
+<style>
+#title
+{
+position:fixed;
+height:130px;
+width:100%;
+background-color:rgba(27,19,72,1);
+padding:0.1em; 
+
+}
+#empty
+{
+height:130px;
+width:100%;
+background-color:white;
+padding:0.1em;
+}
+#zero
+{
+height:100px;
+width:100%;
+background-color:white;
+padding:0.1em; 
+
+}
+#zero2
+{
+height:70px;
+background-color:rgba(215,215,215,1);
+background-size: cover;
+padding:0.1em;
+}
+#zero3
+{
+height:300px;
+width:100%;
+background-color:rgba(64,37,98,1);
+padding:0.1em; 
+
+}
+
+#one
+{
+height:100%;
+width:100%;
+background-image:url("MMJ.jpg");
+background-repeat:no-repeat;
+background-size: cover;
+padding:0.1em;
+}
+
+#img1
+{
+width:450px;
+height:700px;
+background-image:url("雫.png");
+background-size: 450px 900px;
+background-repeat: no-repeat;
+transition-duration:0.5s;
+
+}
+
+#Minori
+{
+width:230px;
+height:200px;
+background-image:url("實乃里2.png");
+background-size: 230px 200px;
+background-repeat: no-repeat;
+transition-duration:0.5s;
+border-radius:50%;
+background-color:rgba(251,205,172);
+}
+#Haruka
+{
+width:230px;
+height:200px;
+background-image:url("遙2.png");
+background-size: 230px 200px;
+background-repeat: no-repeat;
+transition-duration:0.5s;
+border-radius:50%;
+background-color:rgba(157,205,253);
+}
+#Shizuku
+{
+width:230px;
+height:200px;
+background-image:url("雫3.png");
+background-size: 230px 200px;
+background-repeat: no-repeat;
+transition-duration:0.5s;
+border-radius:50%;
+background-color:rgba(157,238,223);
+}
+#Airi
+{
+width:230px;
+height:200px;
+background-image:url("愛莉2.png");
+background-size: 230px 200px;
+background-repeat: no-repeat;
+transition-duration:0.5s;
+border-radius:50%;
+background-color:rgba(254,168,205);
+}
+#Airi:hover
+{
+ transform:scale(1.2);;
+}
+#Haruka:hover
+{
+ transform:scale(1.2);;
+}
+#Shizuku:hover
+{
+ transform:scale(1.2);;
+}
+#Airi:hover
+{
+ transform:scale(1.2);;
+}
+</style>
+<style >
+a:link {
+text-shadow: 0px 0px 7px rgba(0,0,0);
+color:rgb(255,255,255);
+font-family:Microsoft JhengHei;
+}
+a:visited {
+text-shadow: 0px 0px 7px rgba(0,0,0);
+color:rgb(255,255,255);
+font-family:Microsoft JhengHei;
+}
+a:hover
+{
+color:rgb(255,255,255);
+text-shadow: 5px 5px 7px black;
+font-family:Microsoft JhengHei;
+}
+
+#B1{position:fixed;left:10px;top:0px;}
+
+#p1
+{
+color:rgb(0,0,71);
+text-indent:100px;
+line-height:0.1;
+font-size: 1.5em;
+font-family:Microsoft JhengHei;
+letter-spacing : 10px 
+}
+#p2
+{
+margin-left: auto;
+margin-right: auto;
+color:rgb(0,0,0);
+line-height:1;
+font-size: 2em;
+text-align:center;
+text-shadow: 0px 0px 7px rgba(255,255,255);
+letter-spacing : 10px ;
+line-height:10px;
+}
+
+#p3
+{
+margin-left: auto;
+margin-right: auto;
+color:rgba(0,0,0,1);
+font-size: 3em;
+background-color:rgba(157,238,223,1);
+border-radius:10px;
+text-align:center;
+font-family:Microsoft JhengHei;
+}
+
+#p4{
+margin-left: auto;
+margin-right: auto;
+letter-spacing : 10px ;
+color:rgba(255,255,255,1);
+font-size: 2em;
+text-shadow: 0px 0px 10px rgba(251,205,172);
+text-align:center;
+font-family:Microsoft JhengHei;
+background-color:rgba(103,104,242,0.5);
+border-radius:10px;
+}
+#p5{
+
+margin-left: auto;
+margin-right: auto;
+letter-spacing : 10px ;
+color:rgba(255,255,255,1);
+font-size: 2em;
+text-shadow: 0px 0px 10px rgba(157,205,253);
+text-align:center;
+font-family:Microsoft JhengHei;
+background-color:rgba(103,104,242,0.5);
+border-radius:10px;
+}
+#p6{
+
+margin-left: auto;
+margin-right: auto;
+letter-spacing : 10px ;
+color:rgba(255,255,255,1);
+font-size: 2em;
+text-shadow: 0px 0px 10px rgba(157,238,223);
+text-align:center;
+font-family:Microsoft JhengHei;
+background-color:rgba(103,104,242,0.5);
+border-radius:10px;
+}
+#p7{
+
+margin-left: auto;
+margin-right: auto;
+letter-spacing : 10px ;
+color:rgba(255,255,255,1);
+font-size: 2em;
+text-shadow: 0px 0px 10px rgba(254,168,205);
+text-align:center;
+font-family:Microsoft JhengHei;
+background-color:rgba(103,104,242,0.5);
+border-radius:10px;
+}
+#p8{
+margin-left: auto;
+margin-right: auto;
+color:rgba(255,255,255,1);
+font-size: 2em;
+background-color:rgba(54,211,200,1);
+border-radius:500px;
+text-align:center;
+font-family:Microsoft JhengHei;
+}
+#p9{
+margin-left: auto;
+margin-right: auto;
+color:rgba(0,0,0,1);
+font-size: 2em;
+background-color:rgba(2157,238,223,0.5);
+border-radius:30px;
+text-align:center;
+font-family:Microsoft JhengHei;
+}
+#p10{
+margin-left: auto;
+margin-right: auto;
+color:rgba(0,0,0,1);
+font-size: 2em;
+background-color:rgba(219,219,219,1);
+border-radius:500px;
+text-align:center;
+font-family:Microsoft JhengHei;
+}
+</style>
+</span>
+<body style="margin: 0">
+<div id="title" >
+
+<table  border="0", align="right",>
+    <tr>
+        <br>
+        <br>
+        <br>
+    </tr>
+        <tr>
+        <td id="p1"><h2><a href="PJSK.html"style='text-decoration:none;'>遊戲簡介</a></h2></td>
+        <td id="p1"><h2><a href="PJSKpeople.html"style='text-decoration:none;'>角色介紹</a></h2></td>
+        <td id="p1"><h2><a href="PJSKgame.html"style='text-decoration:none;'>遊玩系統</a></h2></td>
+        <td >&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</td>
+        </tr>
+    </table>
+    <img id='B1' src= "logo.png"  />
+</div>
+
+<div id="empty">
+</div>
+
+<div id="zero">
+    <table  border="0", align="center",>
+    <td><a href="PJSKV.html"style='text-decoration:none;'><img style="float: center;" src= "V家.png" width= "200" height="100" /></td>
+        <td>&emsp;&emsp;&emsp;</td>
+    <td><a href="PJSKLN.html"style='text-decoration:none;'><img style="float: center;" src= "LN.png" width= "200" height="100" /></td>
+        <td>&emsp;&emsp;&emsp;</td>
+    <td><a href="PJSKMMJ.html"style='text-decoration:none;'><img style="float: center;" src= "MMJ.png" width= "200" height="100" /></td>
+        <td>&emsp;&emsp;&emsp;</td>
+    <td><a href="PJSKVBS.html"style='text-decoration:none;'><img style="float: center;" src= "VBS.png" width= "200" height="100" /></td>
+        <td>&emsp;&emsp;&emsp;</td>
+    <td><a href="PJSKWS.html"style='text-decoration:none;'><img style="float:center;" src= "WS.png" width= "200" height="100" /></td>
+        <td>&emsp;&emsp;&emsp;</td>
+    <td><a href="PJSK25.html"style='text-decoration:none;'><img style="float: center;" src= "25.png" width= "200" height="100" /></td>
+    </table>
+</div>
+
+<div id="zero3">
+    <table  border="0", align="center",>
+<tr>
+    <td><a href="PJSKMinori.html"style='text-decoration:none;'><div id="Minori" ></div><p id='p4'><b>花里實乃里</b></p></a></td>
+<td >&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</td>
+    <td><a href="PJSKHaruka.html"style='text-decoration:none;'><div id="Haruka" ></div><p id='p5'><b>桐谷遙</b></p></a></td>
+<td >&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</td>
+    <td><a href="PJSKShizuku.html"style='text-decoration:none;'><div id="Shizuku" ></div><p id='p6'><b>日野森雫</b></p></a></td>
+<td >&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</td>
+    <td><a href="PJSKAiri.html"style='text-decoration:none;'><div id="Airi" ></div><p id='p7'><b>桃井愛莉</b></p></a></td>
+<td >&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</td>
+</tr>
+<tr>
+<th  ></th> 
+<td >&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</td>
+<td ></td>
+<td  >&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</td>
+<td ></td>
+<td >&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</td>
+<td ></td>
+ </tr>
+    </table>
+</div>
+<div id="one">
+    <table  border="0", align="center",>
+<td><h1 id="p3">日野森雫</h1></td>
+</table>
+
+<table style="border:8px rgba(54,211,200,0.5) groove;" border="0" , align="center">
+<tr>
+<th rowspan="7" ><div id="img1" ></div></th>
+<td  style="background-color:rgba(255,255,255,0.5)"><h1 id='p8'>CV:</h1></td>
+<td style="background-color:rgba(255,255,255,0.5)"><h2 >本泉莉奈</h2></td>
+<td style="background-color:rgba(255,255,255,0.5)"><h1 id='p8'>性別:</h></td>
+<td style="background-color:rgba(255,255,255,0.5)"><h2 >女</h1></td>
+</tr>
+<tr style="background-color:rgba(255,255,255,0.5)">
+<td ><h1 id='p8'>年齡:</h1></td>
+<td ><h2 >17</h2></td>
+<td ><h1 id='p8'>身高:</h></td></td>
+<td ><h2>168cm</h1></td>
+</tr>
+<tr style="background-color:rgba(255,255,255,0.5)">
+<td ><h1 id='p8'>學校:</h1></td>
+<td ><h2 >宮益坂女子學院</h2></td>
+<td ><h1 id='p8'>年級:</h1></td>
+<td ><h2 >2-D</h2></td>
+</tr>
+<tr style="background-color:rgba(255,255,255,0.5)">
+<td ><h1 id='p8'>生日:</h1></td>
+<td ><h2 >12月6日</h2></td>
+<td ><h1 id='p8'>興趣:</h1></td>
+<td ><h2 >  閱讀、散步</h2></td>
+</tr>
+<tr style="background-color:rgba(255,255,255,0.5)">
+<td ><h1 id='p8'>特技:</h1></td>
+<td ><h2 >弓道、刺繡</h2></td>
+<td ><h1 id='p8'>不擅長、害怕:</h1></td>
+<td ><h2 >閱讀地圖、操作機器</h2></td>
+</tr>
+<tr style="background-color:rgba(255,255,255,0.5)">
+<td ><h1 id='p8'>喜歡的食物:</h1></td>
+<td ><h2 >烏龍麵、豆皮</h2></td>
+<td ><h1 id='p8'>討厭的食物:</h1></td>
+<td ><h2 >所有辛辣食物</h2></td>
+</tr>
+<tr style="background-color:rgba(255,255,255,0.5)">
+<th colspan="4" ><h1 id='p9'>曾隸屬於人氣偶像團體「Cheerful*Days」的偶像<br>藉由具備神秘成熟魅力的容貌，擄獲了許多粉絲，但也因此遭受團內同伴的忌妒。<br>與愛莉是練習生時期的同期生。</h1></td> 
+</tr>
+</table>
+<br>
+<br>
+<br>
+<table  border="0", align="center">
+<tr><th colspan="2" id="p10">4星卡面</th></tr> 
+<tr>
+<td ><h1 id='p8'>覺醒前</h1></td>
+<td ><h1 id='p8'>覺醒後</h1></td>
+</tr>
+
+<tr>
+<td ><img style="float: center;" src= "雫-1.jpg" width= "650" height="450"  /></td>
+<td ><img style="float: center;" src= "雫-2.jpg" width= "650" height="450"  /></td>
+</tr>
+<tr>
+<td ><img style="float: center;" src= "雫-3.jpg" width= "650" height="450"  /></td>
+<td ><img style="float: center;" src= "雫-4.jpg" width= "650" height="450"  /></td>
+</tr>
+<tr>
+<td ><img style="float: center;" src= "雫-5.jpg" width= "650" height="450"  /></td>
+<td ><img style="float: center;" src= "雫-6.jpg" width= "650" height="450"  /></td>
+</tr>
+<tr>
+<td ><img style="float: center;" src= "雫-7.jpg" width= "650" height="450"  /></td>
+<td ><img style="float: center;" src= "雫-8.jpg" width= "650" height="450"  /></td>
+</tr>
+<tr>
+<td ><img style="float: center;" src= "雫-9.jpg" width= "650" height="450"  /></td>
+<td ><img style="float: center;" src= "雫-10.jpg" width= "650" height="450"  /></td>
+</tr>
+<tr>
+<td ><img style="float: center;" src= "雫-11.jpg" width= "650" height="450"  /></td>
+<td ><img style="float: center;" src= "雫-12.jpg" width= "650" height="450"  /></td>
+</tr>
+<tr>
+<td ><img style="float: center;" src= "雫-13.jpg" width= "650" height="450"  /></td>
+<td ><img style="float: center;" src= "雫-14.jpg" width= "650" height="450"  /></td>
+</tr>
+<tr>
+<td ><img style="float: center;" src= "雫-15.jpg" width= "650" height="450"  /></td>
+<td ><img style="float: center;" src= "雫-16.jpg" width= "650" height="450"  /></td>
+</tr>
+<tr>
+<td ><img style="float: center;" src= "雫-17.jpg" width= "650" height="450"  /></td>
+<td ><img style="float: center;" src= "雫-18.jpg" width= "650" height="450"  /></td>
+</tr>
+
+</table>
+</div>
+
+</body>
+</html>
