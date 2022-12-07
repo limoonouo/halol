@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+</title>
+</head>
+<style>
+#title
+{
+position:fixed;
+height:100px;
+width:100%;
+background-color:rgba(167,211,158,1);
+padding:0.1em; 
+
+}
+
+#side
+{
+position:fixed;
+height:100%;
+width:170px;
+background-color:rgba(167,211,158,0.3);
+padding:0.1em; 
+}
+#empty
+{
+height:100px;
+width:100%;
+background-color:white;
+padding:0.1em;
+}
+#zero
+{
+height:100%;
+width:100%;
+background-image:url("2B.jpg");
+background-repeat:repeat-y;
+background-size:100%;
+padding:0.1em;
+}
+.B1:hover
+{
+animation-name: chick2;
+  animation-duration: 0.5s,0.5s;
+    animation-iteration-count:1,1; 
+  animation-fill-mode: forwards;  
+}
+.B2:hover
+{
+animation-name: chick1;
+  animation-duration:0.5s,0.5s;
+  animation-iteration-count:1,1; 
+  animation-fill-mode: forwards; 
+  animation-direction: reverse;
+}
+
+@keyframes chick1
+{
+
+   0%{
+
+        transform: rotate(0deg) scale(1.2);;
+    }
+    100% {
+
+        transform: rotate(360deg) scale(1.2);
+    }
+}
+@keyframes chick2
+{
+
+   0%{
+
+        transform: rotate(0deg) scale(1.2);;
+    }
+    100% {
+
+        transform: rotate(360deg) scale(1.2);
+    }
+}
+
+</style>
+<style >
+a:link {
+color:rgb(0,0,123);
+text-shadow: 0px 0px 7px rgba(73,0,90);
+font-family:Microsoft JhengHei;
+}
+a:visited {
+color:rgb(0,0,123);
+text-shadow: 0px 0px 7px rgba(73,0,90);
+font-family:Microsoft JhengHei;
+}
+a:hover
+{
+color:rgb(255,255,255);
+text-shadow: 5px 5px 7px black;
+font-family:Microsoft JhengHei;
+}
+
+
+
+#p1
+{
+color:rgb(0,0,71);
+text-indent:50px;
+line-height:0.1;
+position:absolute; left:10px; top:5px;
+font-family:Microsoft JhengHei;
+}
+
+#p2
+{
+color:rgb(0,0,71);
+text-indent:10px;
+line-height:0.1;
+text-align: center;
+font-family:Microsoft JhengHei;
+
+}
+
+#p4
+{
+margin-left: auto;
+margin-right: auto;
+width: 70%;
+color:white;
+font-size: 1.8em;
+text-align: center;
+text-shadow: 2px 2px 5px black;
+ background-color:rgba(255,255,255,0.3) ;
+ font-family:Microsoft JhengHei;
+}
+#p5
+{
+margin-left: auto;
+margin-right: auto;
+width: 70%;
+color:white;
+font-size: 3.5em;
+text-align: center;
+text-shadow: 0px 0px 7px rgba(0,100,0);
+font-family:Microsoft JhengHei;
+}
+
+#p5f
+{
+margin-left: auto;
+margin-right: auto;
+width: 70%;
+color:white;
+font-size: 3.5em;
+text-align: center;
+text-shadow: 0px 0px 7px rgba(187,0,0);
+font-family:Microsoft JhengHei;
+}
+#p5w
+{
+margin-left: auto;
+margin-right: auto;
+width: 70%;
+color:white;
+font-size: 3.5em;
+text-align: center;
+text-shadow: 0px 0px 7px rgba(0,140,255);
+font-family:Microsoft JhengHei;
+}
+#p6i
+{
+margin-left: auto;
+margin-right: auto;
+width: 70%;
+color:white;
+font-size: 2.5em;
+text-align: center;
+text-shadow: 2px 2px 5px black;
+font-family:Microsoft JhengHei;
+}
+#p7
+{
+margin-left: auto;
+margin-right: auto;
+
+color:black;
+font-size: 1.5em;
+background-color:rgba(255,255,255,0.3);
+
+font-family:Microsoft JhengHei;
+}
+#p81
+{
+margin-left: auto;
+margin-right: auto;
+color:white;
+font-size: 2em;
+text-align: center;
+text-shadow: 0px 0px 7px black;
+font-family:Microsoft JhengHei;
+}
+#p82
+{
+margin-left: auto;
+margin-right: auto;
+color:white;
+font-size: 2em;
+text-align: center;
+text-shadow: 0px 0px 7px rgba(0,100,0);
+font-family:Microsoft JhengHei;
+}
+
+#p82f
+{
+margin-left: auto;
+margin-right: auto;
+color:white;
+font-size: 2em;
+text-align: center;
+text-shadow: 0px 0px 7px rgba(255,107,107);
+font-family:Microsoft JhengHei;
+}
+#p82w
+{
+margin-left: auto;
+margin-right: auto;
+color:white;
+font-size: 2em;
+text-align: center;
+text-shadow: 0px 0px 7px rgba(0,212,255);
+font-family:Microsoft JhengHei;
+}
+#p9
+{
+margin-left: auto;
+margin-right: auto;
+color:white;
+font-size: 4em;
+text-align: center;
+text-shadow: 0px 0px 7px black;
+font-family:Microsoft JhengHei;
+}
+#p10
+{
+margin-left: auto;
+margin-right: auto;
+color:rgba(255,200,0);
+font-size: 5em;
+text-align: center;
+text-shadow: 0px 0px 7px rgba(200,200,0);
+font-family:Microsoft JhengHei;
+}
+#p11
+{
+margin-left: auto;
+margin-right: auto;
+color:white;
+font-size: 2em;
+text-align: center;
+text-shadow: 0px 0px 7px rgba(220,120,200);
+font-family:Microsoft JhengHei;
+}
+#p12
+{
+margin-left: auto;
+margin-right: auto;
+color:white;
+font-size: 2em;
+text-align: center;
+text-shadow: 0px 0px 7px rgba(255,55,0);
+font-family:Microsoft JhengHei;
+}
+#p13
+{
+margin-left: auto;
+margin-right: auto;
+color:white;
+font-size: 2em;
+text-align: center;
+text-shadow: 0px 0px 7px rgba(121,188,215);
+font-family:Microsoft JhengHei;
+}
+#p14
+{
+margin-left: auto;
+margin-right: auto;
+width: 70%;
+color:white;
+font-size: 3.5em;
+text-align: center;
+text-shadow: 0px 0px 7px rgba(121,188,215);
+font-family:Microsoft JhengHei;
+}
+#p15
+{
+margin-left: auto;
+margin-right: auto;
+width: 70%;
+color:white;
+font-size: 3.5em;
+text-align: center;
+text-shadow: 0px 0px 7px rgba(255,55,0);
+font-family:Microsoft JhengHei;
+}
+#img1{
+height:300px;
+ width:300px;
+ border-radius : 50% ;
+box-shadow: 0px 0px 10px rgba(0,100,0);
+}
+#img2{
+height:300px;
+ width:300px;
+ border-radius : 50% ;
+box-shadow: 0px 0px 10px rgba(255,107,107);
+}
+#img3{
+height:300px;
+ width:300px;
+ border-radius : 50% ;
+box-shadow: 0px 0px 10px rgba(0,212,255);
+}
+#img4{
+height:300px;
+ width:300px;
+ border-radius : 50% ;
+box-shadow: 0px 0px 10px rgba(162,127,152);
+}
+
+#img5{
+height:300px;
+ width:300px;
+ border-radius : 50% ;
+box-shadow: 0px 0px 10px rgba(255,55,0);
+}
+#button1{
+background-color: rgba(167,211,158,1);
+color:rgb(0,0,123) ;
+text-shadow: 0px 0px 10px rgba(73,0,90); 
+padding: 18px;
+width: 100%; 
+border:10px; 
+text-align: center;
+font-size: 3em;
+border-radius:10px;
+letter-spacing:30px;
+font-family:Microsoft JhengHei;
+}
+</style>
+<body style="margin: 0">
+<div id="title" >
+<img class="B1" type="button" onclick="document.getElementById('side').style.display='block'" src= "pokeball.png" align="left" width="50" height="50" />
+<h3 id="p1">< 點此查看其他世代</h3>
+ <h1 id="p2"><a href="HM2.html"style="text-decoration:none;">寶可夢第二世代御三家/神獸(點我回首頁)</a></h1>
+ <script>
+function show() {
+let a = document.getElementById("one"),b = document.getElementById("two");
+if (a.style.display === "block")
+{
+    a.style.display = "none";
+    b.style.display = "block";
+}
+else{
+    b.style.display = "none";
+    a.style.display = "block";
+}
+}
+</script>
+<button type="button" id="button1" onclick="show()">點我切換御三家/神獸</button>
+
+</div>
+<div style="display:none;" id="side">
+<img class="B2" type="button" onclick="document.getElementById('side').style.display='none'" src= "pokeball.png" width="50" height="50" />
+<p style="font-size: 1.4em;"><b><a href="HM2.1.html"style='text-decoration:none;'>第一世代(紅 綠 藍版 黃版)</a></b></p>
+<p style="font-size: 1.4em;"><b><a href="HM2.2.html"style='text-decoration:none;'>第二世代(金 銀版 水晶版)</a></b> </p>
+<p style="font-size: 1.4em;"><b><a href="HM2.3.html"style='text-decoration:none;'>第三世代(紅 藍 綠寶石)</a></b> </p>
+<p style="font-size: 1.4em;"><b><a href="HM2.4.html"style='text-decoration:none;'>第四世代(珍珠 鑽石 白金)</a> </b></p>
+<p style="font-size: 1.4em;"><b><a href="HM2.5.html"style='text-decoration:none;'>第五世代(黑 白 黑2 白2)</a> </b></p>
+<p style="font-size: 1.4em;"><b><a href="HM2.6.html"style='text-decoration:none;'>第六世代(xy)</a></b> </p>
+<p style="font-size: 1.4em;"><b><a href="HM2.7.html"style='text-decoration:none;'>第七世代(日 月 究極日月)</a></b> </p>
+<p style="font-size: 1.4em;"><b><a href="HM2.8.html"style='text-decoration:none;'>第八世代(劍 盾)</a></b> </p>
+
+</div>
+<div id="empty">
+</div>
+<div id="zero">
+<div id="one">
+    <br>
+    <h1 id="p5">菊草葉</h1>
+    <table  border="0", align="center",>
+        <tr>
+        <td id="p81"><h2>屬性:</h2></td>
+        <td id="p82"><h2>草</h2></td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <table  border="0", align="center",>
+        <tr>
+        <th rowspan="4" ><img id="img1" src= "2.1.png"  /></th>
+        <td id="p7"><b>身高:</b></td>
+        <td id="p7">0.9m</td>
+        <td id="p7"><b>體重:</b></td>
+        <td id="p7">6.4KG</td>
+        </tr>
+        <tr>
+        <td id="p7"><b>分類:</b></td>
+        <td id="p7">葉子寶可夢</td>
+        <td id="p7"><b>特性:</b></td>
+        <td id="p7">茂盛</td>
+        </tr>
+        <tr>
+        <td  id="p7"><b>圖鑑版本:</b></td>
+        <th  colspan="3" id="p7">雖然會揮舞葉子威嚇對手，但因為葉子上會飄散出<br>
+        甜甜的香氣，所以雙方都會變得心平氣和下來。</td>
+        </tr>
+    </table>
+
+    <table  border="0", align="center",>
+        <tr><th colspan="3" id="p9">進化:</th></tr>
+        <tr>
+        <td><img id="img1" src= "2.2.png"   /></td>
+        <td id="p10">>>></td>
+        <td><img id="img1" src= "2.3.png" /></td>
+        </tr>
+     </table> 
+
+     <br>
+    <h1 id="p5f">火球鼠</h1>
+    <table  border="0", align="center",>
+        <tr>
+        <td id="p81"><h2>屬性:</h2></td>
+        <td id="p82f"><h2>火</h2></td>
+        
+        </tr>
+    </table>
+    <br>
+    <br>
+    <table  border="0", align="center",>
+        <tr>
+        <th rowspan="4" ><img id="img2" src= "2.7.png"  /></th>
+        <td id="p7"><b>身高:</b></td>
+        <td id="p7">0.5m</td>
+        <td id="p7"><b>體重:</b></td>
+        <td id="p7">7.9KG</td>
+        </tr>
+        <tr>
+        <td id="p7"><b>分類:</b></td>
+        <td id="p7">火鼠寶可夢</td>
+        <td id="p7"><b>特性:</b></td>
+        <td id="p7">猛火</td>
+        </tr>
+        <tr>
+        <td  id="p7"><b>圖鑑版本:</b></td>
+        <th  colspan="3" id="p7">棲息在城都地區的寶可夢。生性膽小，總是將身子縮成一團，<br>
+        但其實體內蘊藏著強大的火力，會從背上噴出火焰保護自己。</td>
+        </tr>
+    </table>
+
+    <table  border="0", align="center",>
+        <tr><th colspan="3" id="p9">進化:</th></tr>
+        <tr>
+        <td><img id="img2" src= "2.8.png"   /></td>
+        <td id="p10">>>></td>
+        <td><img id="img2" src= "2.9.png" /></td>
+        </tr>
+     </table>   
+<br>
+    <h1 id="p5w">小鋸鱷</h1>
+    <table  border="0", align="center",>
+        <tr>
+        <td id="p81"><h2>屬性:</h2></td>
+        <td id="p82w"><h2>水</h2></td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <table  border="0", align="center",>
+        <tr>
+        <th rowspan="4" ><img id="img3" src= "2.4.png"  /></th>
+        <td id="p7"><b>身高:</b></td>
+        <td id="p7">0.6m</td>
+        <td id="p7"><b>體重:</b></td>
+        <td id="p7">9.5KG</td>
+        </tr>
+        <tr>
+        <td id="p7"><b>分類:</b></td>
+        <td id="p7">大顎寶可夢</td>
+        <td id="p7"><b>特性:</b></td>
+        <td id="p7">激流</td>
+        </tr>
+        <tr>
+        <td  id="p7"><b>圖鑑版本:</b></td>
+        <th  colspan="3" id="p7">個子雖小但雙顎力量很強。力量強大到小鋸鱷只是想<br>
+        輕輕咬一下，但卻會讓對方受到重傷的程度。</td>
+        </tr>
+    </table>
+
+    <table  border="0", align="center",>
+        <tr><th colspan="3" id="p9">進化:</th></tr>
+        <tr>
+        <td><img id="img3" src= "2.5.png"   /></td>
+        <td id="p10">>>></td>
+        <td><img id="img3" src= "2.6.png" /></td>
+        </tr>
+     </table>   
+  </div>
+<div style="display:none;" id="two">
+ <br>
+    <h1 id="p14">洛奇亞</h1>
+    <table  border="0", align="center",>
+        <tr>
+        <td id="p81"><h2>屬性:</h2></td>
+        <td id="p11"><h2>超能</h2></td>
+        <td id="p81"><h2>+</h2></td>
+        <td id="p13"><h2>飛行</h2></td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <table  border="0", align="center",>
+        <tr>
+        <th rowspan="4" ><img id="img4" src= "2.01.png"  /></th>
+        <td id="p7"><b>身高:</b></td>
+        <td id="p7">5.2 m</td>
+        <td id="p7"><b>體重:</b></td>
+        <td id="p7">216.0 kg</td>
+        </tr>
+        <tr>
+        <td id="p7"><b>分類:</b></td>
+        <td id="p7">潛水寶可夢</td>
+        <td id="p7"><b>特性:</b></td>
+        <td id="p7">壓迫感</td>
+        </tr>
+        <tr>
+        <td  id="p7"><b>圖鑑版本:</b></td>
+        <th  colspan="3" id="p7">有著只要輕輕揮動翅膀就能吹走房屋的破壞力，<br>
+        因此躲在不為人知的海底生活。</td>
+        </tr>
+    </table>
+<br>
+<br>
+    <h1 id="p15">鳳王</h1>
+    <table  border="0", align="center",>
+        <tr>
+        <td id="p81"><h2>屬性:</h2></td>
+        <td id="p12"><h2>火</h2></td>
+        <td id="p81"><h2>+</h2></td>
+        <td id="p13"><h2>飛行</h2></td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <table  border="0", align="center",>
+        <tr>
+        <th rowspan="4" ><img id="img5" src= "2.02.png"  /></th>
+        <td id="p7"><b>身高:</b></td>
+        <td id="p7">3.8 m</td>
+        <td id="p7"><b>體重:</b></td>
+        <td id="p7">199.0 kg</td>
+        </tr>
+        <tr>
+        <td id="p7"><b>分類:</b></td>
+        <td id="p7">虹色寶可夢</td>
+        <td id="p7"><b>特性:</b></td>
+        <td id="p7">壓迫感</td>
+        </tr>
+        <tr>
+        <td  id="p7"><b>圖鑑版本:</b></td>
+        <th  colspan="3" id="p7">據說在不同角度的光線照射下，會閃耀七彩光芒的羽毛<br>
+        能帶來幸福。據說牠住在彩虹的腳下。</td>
+        </tr>
+    </table>
+
+</div>
+</div>
+
+</body>
+</html>

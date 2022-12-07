@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+</title>
+</head>
+<style>
+#title
+{
+position:fixed;
+height:50px;
+width:100%;
+background-color:rgba(111,157,157,1);
+padding:0.1em; 
+
+}
+
+#side
+{
+position:fixed;
+height:100%;
+width:170px;
+background-color:rgba(111,157,157,0.3);
+padding:0.1em; 
+}
+#empty
+{
+height:50px;
+width:100%;
+background-color:white;
+padding:0.1em;
+}
+#zero
+{
+height:100%;
+width:100%;
+background-image:url("143.jpg");
+background-repeat:repeat-y;
+background-size:100%;
+padding:0.1em;
+}
+.B1:hover
+{
+animation-name: chick2;
+  animation-duration: 0.5s,0.5s;
+    animation-iteration-count:1,1; 
+  animation-fill-mode: forwards;  
+}
+.B2:hover
+{
+animation-name: chick1;
+  animation-duration:0.5s,0.5s;
+  animation-iteration-count:1,1; 
+  animation-fill-mode: forwards; 
+  animation-direction: reverse;
+}
+
+@keyframes chick1
+{
+
+   0%{
+
+        transform: rotate(0deg) scale(1.2);;
+    }
+    100% {
+
+        transform: rotate(360deg) scale(1.2);
+    }
+}
+@keyframes chick2
+{
+
+   0%{
+
+        transform: rotate(0deg) scale(1.2);;
+    }
+    100% {
+
+        transform: rotate(360deg) scale(1.2);
+    }
+}
+
+</style>
+<style >
+a:link {
+text-shadow: 0px 0px 7px rgba(0,0,0);
+color:rgb(255,255,255);
+font-family:Microsoft JhengHei;
+}
+a:visited {
+text-shadow: 0px 0px 7px rgba(0,0,0);
+color:rgb(255,255,255);
+font-family:Microsoft JhengHei;
+}
+a:hover
+{
+color:rgb(255,255,255);
+text-shadow: 5px 5px 7px black;
+font-family:Microsoft JhengHei;
+}
+
+
+
+#p1
+{
+color:rgb(0,0,71);
+text-indent:50px;
+line-height:0.1;
+position:absolute; left:10px; top:5px;
+font-family:Microsoft JhengHei;
+}
+
+#p2
+{
+color:rgb(0,0,71);
+text-indent:10px;
+line-height:0.1;
+text-align: center;
+font-family:Microsoft JhengHei;
+
+}
+#p3
+{
+margin-left: auto;
+margin-right: auto;
+width: 70%;
+color:black;
+font-size: 1.5em;
+text-align: center;
+text-shadow: 2px 2px 10px gray;
+font-family:Microsoft JhengHei;
+}
+#p4
+{
+margin-left: auto;
+margin-right: auto;
+width: 70%;
+color:white;
+font-size: 1.8em;
+text-align: center;
+text-shadow: 2px 2px 5px black;
+ background-color:rgba(111,157,157,0.3) ;
+ font-family:Microsoft JhengHei;
+}
+#p5
+{
+margin-left: auto;
+margin-right: auto;
+width: 70%;
+color:white;
+font-size: 2.5em;
+text-align: center;
+text-shadow: 2px 2px 5px black;
+font-family:Microsoft JhengHei;
+}
+#p6i
+{
+margin-left: auto;
+margin-right: auto;
+width: 70%;
+color:white;
+font-size: 2.5em;
+text-align: center;
+text-shadow: 2px 2px 5px black;
+font-family:Microsoft JhengHei;
+}
+</style>
+<body style="margin: 0">
+<div id="title" >
+<img class="B1" type="button" onclick="document.getElementById('side').style.display='block'" src= "pokeball.png" align="left" width="50" height="50" />
+<h3 id="p1">< 點此查看其他世代</h3>
+ <h1 id="p2"><a href="HM2.html"style="text-decoration:none;">精靈寶可夢 - 歷代御三家/神獸介紹</a></h1>
+</div>
+<div style="display:none;" id="side">
+<img class="B2" type="button" onclick="document.getElementById('side').style.display='none'" src= "pokeball.png" width="50" height="50" />
+<p style="font-size: 1.4em;"><b><a href="HM2.1.html"style='text-decoration:none;'>第一世代(紅 綠 藍版 黃版)</a></b></p>
+<p style="font-size: 1.4em;"><b><a href="HM2.2.html"style='text-decoration:none;'>第二世代(金 銀版 水晶版)</a></b> </p>
+<p style="font-size: 1.4em;"><b><a href="HM2.3.html"style='text-decoration:none;'>第三世代(紅 藍 綠寶石)</a></b> </p>
+<p style="font-size: 1.4em;"><b><a href="HM2.4.html"style='text-decoration:none;'>第四世代(珍珠 鑽石 白金)</a> </b></p>
+<p style="font-size: 1.4em;"><b><a href="HM2.5.html"style='text-decoration:none;'>第五世代(黑 白 黑2 白2)</a> </b></p>
+<p style="font-size: 1.4em;"><b><a href="HM2.6.html"style='text-decoration:none;'>第六世代(xy)</a></b> </p>
+<p style="font-size: 1.4em;"><b><a href="HM2.7.html"style='text-decoration:none;'>第七世代(日 月 究極日月)</a></b> </p>
+<p style="font-size: 1.4em;"><b><a href="HM2.8.html"style='text-decoration:none;'>第八世代(劍 盾)</a></b> </p>
+</div>
+<div id="empty">
+</div>
+<div id="zero">
+    <p id="p6i" ><img src="Pokémon-logo.png"style=" text-align: center"/></p>
+    <br>
+    <h1 id="p5">寶可夢是什麼</h1>
+    <br>
+    <br>
+    <br>
+    <p id="p4" ><b>寶可夢是GAMEFREAK開發遊戲，大受遊戲迷歡迎。至今為止系列遊戲銷量已經超過2億套，位列電子遊戲史上總銷量的第二位，僅次於同為任天堂推出的瑪利歐系列。遊戲主軸作品目前共八個世代，第九世代將在在2022年的11月18號發售。
+    每個世代都有不同特色的地區舞台，玩家做為寶可夢訓練家，以成為寶可夢聯盟的冠軍為目標，一路與勁敵競爭，挑戰道館集齊八枚徽章或是各種試煉，並且遭遇擁有各種陰謀的反派組織，最終阻止反派組織，並挑戰寶可夢聯盟。
+    集齊各種寶可夢完成寶可夢圖鑑亦是玩家遊玩的目標之一。遊戲中除了一般寶可夢之外，玩家亦會遭遇到擁有強大力量，並與故事主軸相關的「傳說寶可夢」，另外也有僅能通過官方舉辦的配佈活動才能取得的「幻之寶可夢」。玩家亦可通過與其他人進行通訊交換，或將以前版本的寶可夢上傳來完成當前的寶可夢圖鑑。</b></p>
+    <br>
+    <br>
+    <br>
+    <h1 id="p5">御三家是什麼</h1>
+    <p id="p4" ><b>玩家一開始可以在研究所選擇初始寶可夢陪你踏上旅途，這些寶可夢的屬性通常以草、火、水三種屬性為一組，並且每個都有三階段變化，而這些最初的夥伴就被玩家稱為御三家。</b></p>
+    <br>
+    <br>
+    <br>
+    <h1 id="p5">神獸是什麼</h1>
+    <p id="p4" ><b>神獸通常出現於《寶可夢》系列的封面，在該款遊戲的劇情中扮演重要角色。神獸往往擁有非常強大的力量，並且數量十分稀少。牠們有的被奉為傳說中的神明或神使、有的被認為是世間某物的創造者或管理者、有的甚至在過去引起了巨大的災害。還有部分傳說的寶可夢是人類為了某些目的而製造的強大寶可夢，其中不乏以其他傳說的寶可夢為範本所製成的寶可夢。
+
+所有神獸都不能生蛋，但是有部分劇情出現了神獸的蛋。</b></p>
+</div>
+
+
+</body>
+</html>
