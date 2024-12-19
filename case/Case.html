@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>充電寶購買</title>
+</head>
+<style>
+#bottom
+{
+position:fixed;
+display: flex; /* 啟用 Flexbox */
+justify-content: center; /* 水平置中 */
+align-items: center; /* 垂直置中 */
+height:75px;
+width:100%;
+background-color:white;
+padding:0.1em; 
+bottom: 0;
+text-align: center;
+}
+#empty
+{
+height:75px;
+width:100%;
+background-color:white;
+padding:0.1em;
+}
+#botton {
+background-color: rgba(0, 0, 0);
+width: 75%;
+height: 75px;
+border-radius: 10px;
+display: flex;
+justify-content: center; 
+align-items: center;
+text-decoration: none;
+transition: background-color 0.2s;
+}
+#container {
+display: flex;
+justify-content: center;
+align-items: center; 
+width: 100vw; 
+height:400px;
+margin: 0; 
+}
+#img1
+{
+display: flex;
+justify-content: center;
+align-items: center; 
+width:25%;
+height:400px;
+background-image:url("001.jpg");
+background-size: 400px 400px;
+background-position: center; 
+background-repeat: no-repeat;
+}
+#img2
+{
+display: flex;
+justify-content: center;
+align-items: center; 
+width:25%;
+height:400px;
+background-image:url("002.jpg");
+background-size: 400px 400px;
+background-position: center; 
+background-repeat: no-repeat;
+}
+#img3
+{
+display: flex;
+justify-content: center;
+align-items: center; 
+width:25%;
+height:400px;
+background-image:url("003.jpg");
+background-size: 400px 400px;
+background-position: center; 
+background-repeat: no-repeat;
+}
+#p2
+{
+color: rgb(0,0,0); /* 白色文字 */
+font-size: 1.5em; /* 字體大小 */
+font-family: "Microsoft JhengHei"; /* 字體 */
+letter-spacing: 10px; /* 字間距 */
+text-indent: 0; /* 移除縮排 */
+line-height: 1; /* 文字行高 */
+display: flex; /* 啟用 Flexbox */
+justify-content: center; /* 水平置中 */
+align-items: center; /* 垂直置中 */
+}
+
+#p3
+{
+display: flex; /* 啟用 Flexbox */
+justify-content: center; /* 水平置中 */
+align-items: center; /* 垂直置中 */
+color:rgb(0,0,0);
+width: 90%;
+font-size: 2em;
+text-align:center;
+margin-left: auto;
+margin-right: auto;
+font-family:Microsoft JhengHei; 
+
+
+}
+
+
+
+
+</style>
+<style>
+a:link {
+color:rgb(0,0,0);
+font-family:Microsoft JhengHei;
+}
+a:visited {
+color:rgb(0,0,0);
+font-family:Microsoft JhengHei;
+}
+a:hover
+{
+color:rgb(255,255,255);
+font-family:Microsoft JhengHei;
+}
+#p1
+{
+ color: rgb(255, 255, 255); /* 白色文字 */
+font-size: 1.5em; /* 字體大小 */
+font-family: "Microsoft JhengHei", sans-serif; /* 字體 */
+letter-spacing: 10px; /* 字間距 */
+margin: 0; /* 移除默認外邊距 */
+text-indent: 0; /* 移除縮排 */
+line-height: 1; /* 文字行高 */
+}
+body {
+    background-color: #def8ff; /* 設置背景顏色 */
+    margin: 0; /* 移除默認邊距 */
+    padding: 0; /* 移除默認內邊距 */
+}
+</style>
+<body >
+<p style="font-size: 1.4em;"><b id="p2">商品描述</b></p>
+<p><b id="p3">說明</b></p>
+<div id="container">
+<div id='img3'></div>
+</div>
+<p style="font-size: 1.4em;"><b id="p2">充電容量</b></p>
+<p><b id="p3">說明</b></p>
+
+<div id="container">
+<div id='img2'></div>
+</div>
+
+<p style="font-size: 1.4em;"><b id="p2">攜帶性</b></p>
+<p><b id="p3">說明</b></p>
+
+<div id="container">
+<div id='img1'></div>
+</div>
+<p style="font-size: 1.4em;"><b id="p2">價格</b></p>
+<p><b id="p3">$?</b></p>
+<p style="font-size: 1.4em;"><b id="p2">商品顏色</b></p>
+<p><b id="p3">說明</b></p>
+
+<div id="container">
+<div id='img3'></div><div id='img3'></div><div id='img3'></div><div id='img3'></div>
+</div>
+
+<div id="bottom">
+<a href="PJSK.html" id="botton">
+<b id="p1">立即購買</b>
+</a>
+</div>
+<div id="empty">
+</div>
+</body>
+</html>
