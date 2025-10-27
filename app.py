@@ -2,12 +2,12 @@ from flask import Flask, request, abort
 from linebot import LineBotApi, WebhookHandler
 from linebot.exceptions import InvalidSignatureError
 from linebot.models import MessageEvent, TextMessage, TextSendMessage
-
+import os
 app = Flask(__name__)
 
 # ⚠️ 換成你的 LINE Channel 資料
-LINE_CHANNEL_ACCESS_TOKEN = 'vlm/75CNEZV5icmrxFKKHgkc49eaxFkOXdV0SIIII2kjo8g6RyE4JwBZdOG+oYltrv0yASUAJAXs/INGTtjuSJulsX0GggA6nZZrG9LhyvWzEvcXjLbmgrbtEaJtGEpoPfPFw63sffUVj0qh2waeTAdB04t89/1O/w1cDnyilFU='
-LINE_CHANNEL_SECRET = '3dd899ef453849d79d9e92cd03a7e9af'
+LINE_CHANNEL_ACCESS_TOKEN = os.environ.get("LINE_CHANNEL_ACCESS_TOKEN")
+LINE_CHANNEL_SECRET = os.environ.get("LINE_CHANNEL_SECRET")
 
 line_bot_api = LineBotApi(LINE_CHANNEL_ACCESS_TOKEN)
 handler = WebhookHandler(LINE_CHANNEL_SECRET)
