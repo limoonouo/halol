@@ -3,9 +3,10 @@ from linebot import LineBotApi, WebhookHandler
 from linebot.exceptions import InvalidSignatureError
 from linebot.models import MessageEvent, TextMessage, TextSendMessage
 import os
+
 app = Flask(__name__)
 
-# ⚠️ 換成你的 LINE Channel 資料
+# 讀取環境變數
 LINE_CHANNEL_ACCESS_TOKEN = os.environ.get("LINE_CHANNEL_ACCESS_TOKEN")
 LINE_CHANNEL_SECRET = os.environ.get("LINE_CHANNEL_SECRET")
 
@@ -20,7 +21,7 @@ def home():
 # LINE Webhook endpoint
 @app.route("/callback", methods=['POST', 'GET', 'OPTIONS'])
 def callback():
-    # 如果是非 POST，直接回 200，避免 405 Method Not Allowed
+    # 非 POST 直接回 200，避免 405 或 timeout
     if request.method != 'POST':
         return 'OK', 200
 
@@ -32,6 +33,7 @@ def callback():
     except InvalidSignatureError:
         abort(400)
 
+    # LINE 要求快速回應 200
     return 'OK', 200
 
 # 回覆文字訊息
@@ -39,8 +41,12 @@ def callback():
 def handle_message(event):
     user_text = event.message.text
     reply = f"你說了：{user_text}"
-    line_bot_api.reply_message(event.reply_token, TextSendMessage(text=reply))
+    line_bot_api.reply_message(
+        event.reply_token,
+        TextSendMessage(text=reply)
+    )
 
 if __name__ == "__main__":
-    # 允許外部訪問，Cloudflare Tunnel 需要
-    app.run(host="0.0.0.0", port=5000)
+    port = int(os.environ.get("PORT", 5000))  # Render 指定 PORT
+    app.run(host="0.0.0.0", port=port)
+
